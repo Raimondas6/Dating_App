@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.dFlex {
+  display: flex;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  background-color: hsl(345deg, 100%, 90%);
+  padding: 20px;
+  width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: hsla(345deg, 50%, 50%, 0.1) -10px 10px 15px 0px;
+}
+
+.page {
+  padding: 20px;
+  min-height: calc(100vh - 160px);
+  text-shadow: hsla(345deg, 50%, 50%, 0.3) -10px 10px 15px;
+}
+.page input, .page select, .page button {
+  box-shadow: hsla(345deg, 50%, 50%, 0.1) -10px 10px 15px 0px;
+}
+
+.block {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: inset hsla(345deg, 50%, 50%, 0.15) -10px 10px 15px 0px;
+}
+
+h1, h3 {
+  color: hsl(345deg, 100%, 65%);
+  text-shadow: hsla(345deg, 50%, 50%, 0.3) -10px 10px 15px;
+  transition: 500ms;
+}
+
+input, select, button {
+  font-weight: bold;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 999px;
+  border: 2px solid hsl(345deg, 100%, 65%);
+}
+input:focus, select:focus, button:focus {
+  outline: 2px solid hsl(345deg, 100%, 65%);
+}
+
+input, select {
+  color: hsl(345deg, 100%, 65%);
+}
+input::-moz-placeholder, select::-moz-placeholder {
+  color: hsl(345deg, 100%, 90%);
+}
+input:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: hsl(345deg, 100%, 90%);
+}
+input::placeholder, select::placeholder {
+  color: hsl(345deg, 100%, 90%);
+}
+
+button {
+  cursor: pointer;
+  color: hsl(345deg, 100%, 65%);
+  background-color: hsl(345deg, 100%, 90%);
+  transition: 500ms;
+  padding: 7px 20px;
+  opacity: 50%;
+}
+button:hover {
+  font-weight: 700;
+  border: 3px solid hsl(345deg, 100%, 65%);
+  opacity: 100%;
+  transform: scale(1.2);
+  transition: 100ms;
+}
+
+input {
+  padding-left: 13px;
+}
+
+select {
+  padding-left: 8px;
+}
+
+.NavBar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavBar h1:hover {
+  transform: scale(1.1);
+  transition: 100ms;
+}
+
+.NavBar h1 {
+  cursor: pointer;
+}
+
+.LoginPage .forms {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.LoginPage .forms .login, .LoginPage .forms .register {
+  font-weight: bold;
+  color: hsl(345deg, 100%, 65%);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+.LoginPage .forms .login .checkbox {
+  display: flex;
+  margin-left: 17px;
+}
+.LoginPage .forms .login .checkbox input {
+  margin-right: 10px;
+}
+
+.ProfilePage {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.ProfilePage .upload {
+  display: flex;
+  align-items: flex-start;
+}
+.ProfilePage .upload input {
+  width: 600px;
+  margin-right: 20px;
+}
+.ProfilePage .Carousel {
+  height: 550px;
+}
+.ProfilePage .Carousel .arrows {
+  opacity: 25%;
+}
+
+.UsersPage {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.UsersPage .Carousel {
+  height: 560px;
+}
+.UsersPage .Carousel .arrows {
+  opacity: 25%;
+}
+.UsersPage .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.UsersPage .buttons button {
+  font-size: 40px;
+  padding: 10px 40px;
+}
+
+.FilterPage {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+.FilterPage input, .FilterPage select, .FilterPage div {
+  width: 50%;
+}
+.FilterPage div.range {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.FilterPage div.range h4 {
+  color: hsl(345deg, 100%, 65%);
+}
+.FilterPage div.range input {
+  width: 100%;
+  box-shadow: none;
+}
+
+.HistoryPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.HistoryPage .links {
+  display: flex;
+  justify-content: space-around;
+}
+.HistoryPage .links .link {
+  cursor: pointer;
+}
+.HistoryPage .list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.HistoryPage .list .user {
+  width: 350px;
+}
+
+.Carousel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: hsla(345deg, 50%, 50%, 0.15) -10px 10px 15px 0px;
+}
+.Carousel .arrows {
+  cursor: pointer;
+  text-shadow: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  height: 100%;
+  color: hsl(345deg, 100%, 65%);
+  background-color: hsl(345deg, 100%, 90%);
+  opacity: 0%;
+}
+.Carousel .arrows:hover {
+  opacity: 25%;
+}/*# sourceMappingURL=App.css.map */
